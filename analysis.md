@@ -1,22 +1,27 @@
-# Introduction
+Group members :
 
-Describe the algorithms of your choice
+Nur Ain Binti Ishak (1810052)
+Ainin Sofiya Binti Amir (1814370)
+Amirah Binti Masri (1813198)
+
+# Introduction
+We choose FCFS as the worst algorithm that not so efficient for class scheduling.
 
 # Consideration
+Each class may have to wait for the long process at the front to finish. In addition, if a process with very least priority is being executed, which takes more time, and all of a sudden some other high priority process arrives, like interrupt to avoid system crash, the high priority process will have to wait, and hence in this case, the system will crash, just because of improper process scheduling. This algorithm definitely not an ideal technique for time-sharing systems.
 
-Describe what you have considered
 
 # Analysis
 
 ## FCFS
+First Come First Serve (FCFS) is an operating system scheduling algorithm that automatically executes queued requests and processes in order of their arrival. It is the easiest and simplest CPU scheduling algorithm. In this type of algorithm, processes which requests the CPU first get the CPU allocation first. This is managed with a FIFO queue. It supports non-preemptive and pre-emptive scheduling algorithm,jobs are always executed on a first-come, first-serve basis, easy to implement and use and this method is poor in performance, and the general wait time is quite high. But, there are some drawbacks of using this algorithm which is it is a Non-Preemptive CPU scheduling algorithm, so after the process has been allocated to the CPU, it will never release the CPU until it finishes executing, the Average Waiting Time is high, short processes that are at the back of the queue have to wait for the long process at the front to finish and because of its simplicity, FCFS is not very efficient for this class scheduling.
 
-Give an analysis of your algo and compare it with the other two
 
 ## Algo2
+Priority Scheduling Algorithm, which is based on the priority assigned to each process. Priority scheduling is a non-preemptive algorithm and one of the most common scheduling algorithms in batch systems. In priority scheduling the Processes are executed on the basis of priority, the process having highest priority is executed first. In case of similar priority FCFS is used. It's also used in such a way that, in case of similar priority SJF algorithm is used instead of FCFS and average waiting time and average turnaround time is calculated. The comparative analysis is performed on the SJF based priority scheduling and FCFS based priority scheduling to compare the average waiting time and average turnaround time. Some of the benefits that we can get from this algorithm are it is easy to use scheduling method, the processes are executed on the basis of priority so high priority does not need to wait for long which saves time. Other than that , this method provides a good mechanism where the relative important of each process may be precisely defined and very suitable for applications with fluctuating time and resource requirements.
 
-Give an analysis of your algo and compare it with the other two
 
 ## Algo3
+SJF Algorithm is quite similar to FCFS concept, but the process which comes at the same time or the same ready queue must be sorted in ascending order. The smallest burst time will be the first order while the bigger will be the last one. The same arrival time must be sorted from low to high. This algorithm is having a minimum average waiting time among all scheduling algorithms.The SJF is better if the process comes to processor simultaneously. The disadvantage of this algorithm is that long processes may never be processed by the system and may remain in the queue for very long time leading to starvation of processes.
 
-Give an analysis of your algo and compare it with the other two
 
